@@ -26,7 +26,7 @@ services:
       DB_HOST: postgres
       POSTGRES_DB: "universal_auto_dev"
       POSTGRES_USER: "universal_auto_dev"
-      POSTGRES_PASSWORD: "pass"
+      POSTGRES_PASSWORD: "pass1"
 
   redis:
     image: redis:6.2-alpine
@@ -43,7 +43,7 @@ services:
     environment:
       POSTGRES_DB: "universal_auto_dev"
       POSTGRES_USER: "universal_auto_dev"
-      POSTGRES_PASSWORD: "pass"
+      POSTGRES_PASSWORD: "pass1"
     volumes:
       - ./data/db:/var/lib/postgresql/data
     ports:
